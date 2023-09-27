@@ -1,0 +1,72 @@
+/* style.css */
+
+:root {
+  --Primary: #121212;
+  --Searchbackground: #202020;
+  --White: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  padding: 6px 30px 6px 6px;
+  width: 275px;
+  background-color: var(--Searchbackground);
+  color: var(--White);
+  border-radius: 2px;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: -30px;
+}
+
+.search img {
+  width: 20px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather h1,
+h2 {
+  color: var(--White);
+}
